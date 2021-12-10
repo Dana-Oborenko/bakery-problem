@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+.slider{
+    position: relative;
+    color: black;
+}
+
+.slider__prev, .slider__next{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    top: 4em;
+}
+
+.slider__prev{
+    left: -220px
+}
+
+.slider__next{
+    right: -220px;
+}
