@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Bakery problem </title>
+        <title>Bakery problem | Login</title>
         <meta charset="UTF-8">
         <link href="index.css" rel="stylesheet" type="text/css">
-        <style>
-            table, th, td {
-            border: 1px solid black;
-            }
-            </style>
     </head>
     <body>
         <div class="auth">
             <form class="js-form">
-                <label for="username">Lietotāja vārds:</label>
-                <input type="text" name="username" id="username" class="js-form-username">
+                <label for="username">Lietotājvārds:</label>
+                <input type="text" name="username" id="js-form-username">
                 <br>
                 <br>
                 <label for="password">Parole:</label>
-                <input type="password" name="password" id="password" class="js-form-password">
+                <input type="password" name="password" id="js-form-password">
                 <br>
                 <br>
-                <button type="submit" class="js-hide">Pierakstīties</button>
+                <button type="submit">Pierakstīties</button>
             </form>
+            <button type="submit" id="log-out-user">Izrakstīties</button>
         </div>
-        <center>
+        <div class="main">
             <h2>Izceptu bulciņu skaita uzskaite 49. nedēļā</h2>
             <div class="slider">
                 <span class="slider__prev"> &lt; </span>
@@ -36,51 +32,44 @@
                         <th>Komentāri</th>
                     </tr>
                     <tr>
-                        <td> 06.12.2021 </td>
-                        <form method="post" action=""></form>
-                        <td><input type="text" name="count"></td>
-                        <td><input type="text" name="comments"></td>
+                        <td class="date">06.12.2021</td>
+                        <td class="count"><input type="text" name="count"></td>
+                        <td class="comments"><input type="text" name="comments"></td>
                     </tr>
                     <tr>
-                        <td> 07.12.2021 </td>
-                        <form method="post" action=""></form>
-                        <td><input type="text" name="count"></td>
-                        <td><input type="text" name="comments"></td>
+                        <td class="date">07.12.2021</td>
+                        <td class="count"><input type="text" name="count"></td>
+                        <td class="comments"><input type="text" name="comments"></td>
                     </tr>
                     <tr>
-                        <td> 08.12.2021 </td>
-                        <form method="post" action=""></form>
-                        <td><input type="text" name="count"></td>
-                        <td><input type="text" name="comments"></td>
-                    <tr>
-                        <td> 09.12.2021 </td>
-                        <form method="post" action=""></form>
-                        <td><input type="text" name="count"></td>
-                        <td><input type="text" name="comments"></td>
+                        <td class="date">08.12.2021</td>
+                        <td class="count"><input type="text" name="count"></td>
+                        <td class="comments"><input type="text" name="comments"></td>
                     </tr>
                     <tr>
-                        <td> 10.12.2021 </td>
-                        <form method="post" action=""></form>
-                        <td><input type="text" name="count"></td>
-                        <td><input type="text" name="comments"></td>
+                        <td class="date">09.12.2021</td>
+                        <td class="count"><input type="text" name="count"></td>
+                        <td class="comments"><input type="text" name="comments"></td>
                     </tr>
                     <tr>
-                        <td> 11.12.2021 </td>
-                        <form method="post" action=""></form>
-                        <td><input type="text" name="count"></td>
-                        <td><input type="text" name="comments"></td>
+                        <td class="date">10.12.2021</td>
+                        <td class="count"><input type="text" name="count"></td>
+                        <td class="comments"><input type="text" name="comments"></td>
                     </tr>
                     <tr>
-                        <td> 12.12.2021 </td>
-                        <form method="post" action=""></form>
-                        <td><input type="text" name="count"></td>
-                        <td><input type="text" name="comments"></td>
+                        <td class="date">11.12.2021</td>
+                        <td class="count"><input type="text" name="count"></td>
+                        <td class="comments"><input type="text" name="comments"></td>
+                    </tr>
+                    <tr>
+                        <td class="date">12.12.2021</td>
+                        <td class="count"><input type="text" name="count"></td>
+                        <td class="comments"><input type="text" name="comments"></td>
                     </tr>
                 </table>
             </div>
-                <p> </p>
-            <input type="button" value="Pievienot jaunu dienu">
-        </center>
+            <button id="save-data" title="Saglabāt datus">Saglabāt datus</button>
+        </div>
     </body>
     <script src="script.js"></script>
 </html>
